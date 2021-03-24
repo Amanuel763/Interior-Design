@@ -1,5 +1,6 @@
 import React from 'react'
 import { Nav, Navbar } from 'react-bootstrap'
+import { LinkContainer } from 'react-router-bootstrap'
 import { BsFillPersonFill } from 'react-icons/bs'
 import { BiCartAlt } from 'react-icons/bi'
 
@@ -7,18 +8,33 @@ const Header = () => {
     return (
         <>
             <Navbar bg="light" expand="lg" collapseOnSelect>
-                <Navbar.Brand href="/">NASHVILLE INTERIOR DESIGN</Navbar.Brand>
+                <LinkContainer to='/'>
+                    <Navbar.Brand>NASHVILLE INTERIOR DESIGN</Navbar.Brand>
+                </LinkContainer>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="mr-auto">
-                        <Nav.Link href="/">Home</Nav.Link>
-                        <Nav.Link href="/shop">SHOP</Nav.Link>
-                        <Nav.Link href="/contact">CONTACT</Nav.Link>
-                        <Nav.Link href="/about">ABOUT</Nav.Link>
+                        <LinkContainer to='/'>
+                            <Nav.Link>Home</Nav.Link>
+                        </LinkContainer>
+                        <LinkContainer to="/shop">
+                            <Nav.Link>SHOP</Nav.Link>                        
+                        </LinkContainer>
+                        <LinkContainer to="/contact">
+                            <Nav.Link>CONTACT</Nav.Link>                      
+                        </LinkContainer>
+                        <LinkContainer to='about'>
+                            <Nav.Link>ABOUT</Nav.Link>                        
+                        </LinkContainer>
                     </Nav>
                     <Nav className="ml-auto">
-                        <Nav.Link href="/cart"><BiCartAlt /></Nav.Link>
-                        <Nav.Link href="/signin"><BsFillPersonFill /></Nav.Link>
+                        <LinkContainer to='/cart'>
+                            <Nav.Link><BiCartAlt /></Nav.Link>                    
+                        </LinkContainer>
+                        <LinkContainer to='/signin'>
+                            <Nav.Link><BsFillPersonFill /></Nav.Link>
+                        
+                        </LinkContainer>
                     </Nav>
                 </Navbar.Collapse>
             </Navbar>

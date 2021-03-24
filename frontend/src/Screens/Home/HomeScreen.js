@@ -1,10 +1,13 @@
 import React from 'react'
+import HeroComponent from '../../Components/HeroComponent'
+import Productpage from '../../Pages/Productpage'
 
 const HomeScreen = () => {
     return (
-        <div>
-            
-        </div>
+        <>  
+            <HeroComponent />
+            <Productpage />
+        </>
     )
 }
 

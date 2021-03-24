@@ -1,0 +1,21 @@
+.Jumbotron-container{
+    background-color: #f2f0f1;
+    height: 30rem;
+    margin-left: -28rem;
+    margin-top: -1rem;
+    width: 161.7%;
+    margin-bottom: 5rem;
+}
+
+.Jumbotron-text{
+    margin-left: 15rem;
+    transform: translate(10%, 150%);
+}
+
+.Jumbotron-text h1{
+    font-size: 1.5rem;
+}
+
+.Jumbotron-text p{
+    font-size: 0.8rem;
+}

@@ -5,7 +5,8 @@ const products = [
         image: '/images/13.jpg',
         description: 'This chair has four legs and two arm rests',
         price: '25.00',
-        rating: '4.5'
+        rating: '4.5',
+        numReviews: 12
     },
     {
         _id: '2',
@@ -13,7 +14,8 @@ const products = [
         image: '/images/2.jpg',
         description: 'This chair has four legs and two arm rests',
         price: '25.00',
-        rating: '4.5'
+        rating: '4.5',
+        numReviews: 12
     },
     {
         _id: '3',
@@ -21,7 +23,8 @@ const products = [
         image: '/images/3.jpg',
         description: 'This chair has four legs and two arm rests',
         price: '25.00',
-        rating: '4.5'
+        rating: '4.5',
+        numReviews: 12
     },
     {
         _id: '4',
@@ -29,7 +32,8 @@ const products = [
         image: '/images/4.jpg',
         description: 'This chair has four legs and two arm rests',
         price: '25.00',
-        rating: '4.5'
+        rating: '4.5',
+        numReviews: 12
     },
     {
         _id: '5',
@@ -37,7 +41,8 @@ const products = [
         image: '/images/9.jpg',
         description: 'This chair has four legs and two arm rests',
         price: '25.00',
-        rating: '4.5'
+        rating: '4.5',
+        numReviews: 12
     },
     {
         _id: '5',
@@ -45,7 +50,8 @@ const products = [
         image: '/images/8.jpg',
         description: 'This chair has four legs and two arm rests',
         price: '25.00',
-        rating: '4.5'
+        rating: '4.5',
+        numReviews: 12
     },
     {
         _id: '5',
@@ -53,7 +59,8 @@ const products = [
         image: '/images/7.jpg',
         description: 'This chair has four legs and two arm rests',
         price: '25.00',
-        rating: '4.5'
+        rating: '4.5',
+        numReviews: 12
     },
 ]
 
