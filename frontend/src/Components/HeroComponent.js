@@ -1,5 +1,6 @@
 import React from 'react'
-import '../Components/Css/HeroComponent.css'
+import '../index.css'
+import Button from 'react-bootstrap/Button'
 
 const HeroComponent = () => {
     return (
@@ -12,7 +13,11 @@ const HeroComponent = () => {
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam consequatur quia ipsam sint voluptatibus <br></br> assumenda tenetur laborum praesentium! Tenetur, repellendus.
                     </p>
+                    <Button variant="link" className="button">Learn More</Button>
+
                 </div>
+                <div className='Jumbotron-image'></div>
+
             </div>
         </>
     )

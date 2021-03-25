@@ -27,7 +27,7 @@ const Header = () => {
                             <Nav.Link>ABOUT</Nav.Link>                        
                         </LinkContainer>
                     </Nav>
-                    <Nav className="ml-auto">
+                    <Nav className="ml-auto signs">
                         <LinkContainer to='/cart'>
                             <Nav.Link><BiCartAlt /></Nav.Link>                    
                         </LinkContainer>
