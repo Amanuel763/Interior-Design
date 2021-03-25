@@ -62,7 +62,23 @@ body{
 }
 
 .product-image{
-  height: 40rem;
+  height: 40rem !important;
 }
 
+.footer-container{
+  background: #d5d5d5;
+  max-width: 100% !important;
+  text-align: center;
+}
+
+.footer-navigation{
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+
+}
+
+.footer-logo{
+  font-size: 2rem;
+}
 
