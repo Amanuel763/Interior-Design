@@ -10,6 +10,7 @@ const Footer = () => {
                 <Col md={3}>
                     <Nav className="footer-navigation">
                         <h3>Navigation</h3>
+                        <hr className="footer-hr"/>
                         <LinkContainer to='/'>
                             <Nav.Link>
                                 HOME
@@ -36,7 +37,7 @@ const Footer = () => {
                 <Col md={3}>
                     <Nav className="footer-navigation">
                         <h3>SOCIAL MEDIA</h3>
-
+                        <hr className="footer-hr"/>
                         <LinkContainer to='/'>
                             <Nav.Link>
                                 TWITTER
@@ -63,7 +64,7 @@ const Footer = () => {
                 <Col md={3}>
                     <Nav className="footer-navigation">
                         <h3>Information</h3>
-
+                        <hr className="footer-hr"/>
                         <LinkContainer to='/'>
                             <Nav.Link>
                                 Join our Team

@@ -8,6 +8,7 @@ const Productpage = () => {
         <>  
             <h5 className="onsale">On Sale</h5>
             <h1 className="Essentialproduct">Essential Products</h1>
+            <hr className="footer-hr"/>
             <Row>
                 {products.map((product) => (
                     <Col sm={12} md={6} lg={4} xl={3} >

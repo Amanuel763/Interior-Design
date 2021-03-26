@@ -1,5 +1,7 @@
 import React from 'react'
+import FeaturedProduct from '../../Components/FeaturedProduct'
 import HeroComponent from '../../Components/HeroComponent'
+import ParallaxComponent from '../../Components/ParallaxComponent'
 import Productpage from '../../Pages/Productpage'
 
 const HomeScreen = () => {
@@ -7,6 +9,9 @@ const HomeScreen = () => {
         <>  
             <HeroComponent />
             <Productpage />
+            <ParallaxComponent />
+            <Productpage />
+            <FeaturedProduct />
         </>
     )
 }

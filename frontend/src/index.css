@@ -65,6 +65,59 @@ body{
   height: 40rem !important;
 }
 
+/*Parallax image start*/
+
+.parallax-image{
+  background-image: url('./images/3.jpg');
+  height: 25rem;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  width: 150%;
+  margin-left: -15rem;
+}
+
+/*Parallax image end*/
+
+
+/*FeaturedImage  start*/
+
+.Featured-Container{
+  background-color: #f2f0f1;
+  height: 25rem;
+  margin-left: -20rem;
+  width: 161.7%;
+  margin-bottom: 5rem;  
+
+}
+
+.Featuredproduct-image{
+  background-image: url('./images/suchit-poojari-ljRiZl00n18-unsplash-removebg-preview.png');
+  height: 45rem;
+  background-position: center;
+  background-attachment: cover;
+  background-repeat: no-repeat;
+  transform: translate(20%, -35%);
+}
+
+.Featured-text{
+  margin-left: -650rem;
+  text-align: center;
+}
+
+.Featured-text h1{
+  transform: translateX(40%);
+  margin-top: -38rem;
+}
+
+.Featured-text p{
+  transform: translateX(40%);
+}
+
+/*FeaturedImage end*/
+
+/*Footer section*/
+
 .footer-container{
   background: #d5d5d5;
   max-width: 100% !important;
@@ -82,3 +135,8 @@ body{
   font-size: 2rem;
 }
 
+.footer-hr{
+  border: 1px solid rgb(247, 75, 75);
+  border-radius: 1px;
+  width: 10%;
+}
