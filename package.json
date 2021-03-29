@@ -1,15 +1,26 @@
 {
   "dependencies": {
+    "bcrypt": "^5.0.1",
+    "concurrently": "^6.0.0",
+    "dotenv": "^8.2.0",
     "express": "^4.17.1",
+    "mongoose": "^5.12.2",
+    "nodemon": "^2.0.7",
     "react-router": "^5.2.0",
     "react-router-dom": "^5.2.0"
   },
   "scripts": {
-    "start": "node backend/server"
+    "start": "node backend/server",
+    "server": "nodemon backend/server",
+    "client": "yarn --cwd frontend start",
+    "dev": "concurrently \"yarn server\" \"yarn client\"",
+    "data:import": "node backend/seeder",
+    "data:destroy": "node backend/seeder -d"
   },
   "name": "interior-designs",
   "version": "1.0.0",
   "main": "server.js",
+  "type": "module",
   "repository": "https://github.com/Amanuel763/Interior-Design.git",
   "author": "Amanuel <schwartzfuss763@yahoo.com>",
   "license": "MIT"

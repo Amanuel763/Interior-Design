@@ -1,4 +1,4 @@
-const products = [
+const newproducts = [
     {
         _id: '1',
         name: 'chair',
@@ -39,36 +39,6 @@ const products = [
         numReviews: 12,
         countInStock: 11,
     },
-    {
-        _id: '5',
-        name: 'chair',
-        image: '/images/9.jpg',
-        description: 'This chair has four legs and two arm rests',
-        price: '25.00',
-        rating: '4.5',
-        numReviews: 12,
-        countInStock: 30,
-    },
-    {
-        _id: '6',
-        name: 'chair',
-        image: '/images/8.jpg',
-        description: 'This chair has four legs and two arm rests',
-        price: '25.00',
-        rating: '4.5',
-        numReviews: 12,
-        countInStock: 25,
-    },
-    {
-        _id: '7',
-        name: 'chair',
-        image: '/images/7.jpg',
-        description: 'This chair has four legs and two arm rests',
-        price: '25.00',
-        rating: '4.5',
-        numReviews: 12,
-        countInStock: 20,
-    },
 ]
 
-export default products
+export default newproducts

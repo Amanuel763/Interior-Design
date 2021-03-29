@@ -69,6 +69,16 @@ const products = [
         numReviews: 12,
         countInStock: 20,
     },
+    {
+        _id: '8',
+        name: 'chair',
+        image: '/images/2.jpg',
+        description: 'This chair has four legs and two arm rests',
+        price: '25.00',
+        rating: '4.5',
+        numReviews: 12,
+        countInStock: 20,
+    }
 ]
 
-module.exports = products
+export default products
