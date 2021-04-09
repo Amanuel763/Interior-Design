@@ -1,33 +1,43 @@
 import React, {useState, useEffect} from 'react'
-import { Button, Card, Col, Image, ListGroup, Row } from 'react-bootstrap'
+import { Button, Card, Col, Container, Form, Image, ListGroup, Row } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
 import Rating from '../Components/Rating'
-import axios from 'axios'
+import Message from '../Components/Message'
+import Loader from '../Components/Loader'
+import { useDispatch, useSelector} from 'react-redux'
+import {listProductsDetails} from '../actions/productActions'
 
-const ProductDetails = ({match}) => {
 
-    const [product, setProduct] = useState({})
+const ProductDetails = ({history, match}) => {
+    const [qty, setQty] = useState()
+
+    const dispatch = useDispatch()
+
+    const productDetails = useSelector(state => state.productDetails)
+    const {loading, error, product} = productDetails
+
 
     useEffect(() => {
-        const fetchProduct = async () => {
-            const { data } = await axios.get(`/api/products/${match.params.id}`)
+        dispatch(listProductsDetails(match.params.id))
 
-            setProduct(data)
-        }
+    }, [dispatch, match])
 
-        fetchProduct()
-    }, [match])
+    const addToCartHandler = () => {
+        history.push(`/cart/${match.params.id}?qty=${qty}`)
+    }
+
 
     return (
-        <>
+        <Container className='productdetails'>
             <Link className="btn btn-dark my-3" to='/shop'>
                 GO BACK
             </Link>
-            <Row>
-                <Col md={6}>
+            {loading ? <Loader /> : error ?  <Message variant='danger'>{error}</Message> : (
+                <Row>
+                <Col sm={12} md={6}>
                     <Image src={product.image} alt={product.name} fluid className="product-image" />
                 </Col>
-                <Col md={3}>
+                <Col sm={12} md={3}>
                     <ListGroup variant="flush">
                         <ListGroup.Item>
                             <h3>{product.name}</h3>
@@ -69,8 +79,26 @@ const ProductDetails = ({match}) => {
                                 </Row>
                             </ListGroup.Item>
 
+                            {product.countInStock > 0 && (
                             <ListGroup.Item>
-                                <Button  className='btn-block' type='button' disabled={product.countInStock === 0}>
+                                <Row>
+                                    <Col>
+                                        Qty
+                                    </Col>
+                                    <Col>
+                                        <Form.Control as='select' value={qty} onChange={(e) => setQty(e.target.value)}>
+                                            
+                                            {[...Array(product.countInStock).keys()].map(x => (
+                                                <option key={ x + 1} value={ x + 1}>{x + 1}</option>
+                                            ))}
+                                        </Form.Control>
+                                    </Col>
+                                </Row>
+                            </ListGroup.Item>
+                        )}
+
+                            <ListGroup.Item>
+                                <Button onClick={addToCartHandler} className='btn-block' type='button' disabled={product.countInStock === 0}>
                                     Add To Cart
                                 </Button>
                             </ListGroup.Item>
@@ -78,7 +106,9 @@ const ProductDetails = ({match}) => {
                     </Card>
                 </Col>
             </Row>
-        </>
+            )}
+            
+        </Container>
     )
 }
 

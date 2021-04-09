@@ -10,6 +10,7 @@ const HomeScreen = () => {
     return (
         <>  
             <HeroComponent />
+            <Productpage />
             <ParallaxComponent />
             <NewProducts />
             <FeaturedProduct />

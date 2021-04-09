@@ -11,7 +11,7 @@ const HeroComponent = () => {
                         NASHVILLE INTERIOR DESIGN
                     </h1>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam consequatur quia ipsam sint voluptatibus <br></br> assumenda tenetur laborum praesentium! Tenetur, repellendus.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam consequatur quia ipsam sint voluptati.
                     </p>
                     <Button variant="link" className="button">Learn More</Button>
 

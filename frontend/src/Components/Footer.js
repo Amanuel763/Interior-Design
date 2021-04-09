@@ -7,34 +7,8 @@ const Footer = () => {
         
         <Container className="footer-container">
             <Row>
-                <Col md={3}>
-                    <Nav className="footer-navigation">
-                        <h3>Navigation</h3>
-                        <hr className="footer-hr"/>
-                        <LinkContainer to='/'>
-                            <Nav.Link>
-                                HOME
-                            </Nav.Link>
-                        </LinkContainer>
-                        <LinkContainer to='/shop'>
-                            <Nav.Link>
-                                SHOP
-                            </Nav.Link>
-                        </LinkContainer>
-                        <LinkContainer to='/contact'>
-                            <Nav.Link>
-                                CONTACT
-                            </Nav.Link>
-                        </LinkContainer>
-                        <LinkContainer to='/about'>
-                            <Nav.Link>
-                                ABOUT
-                            </Nav.Link>
-                        </LinkContainer>
-                    </Nav>
-                </Col>
 
-                <Col md={3}>
+                <Col md={4}>
                     <Nav className="footer-navigation">
                         <h3>SOCIAL MEDIA</h3>
                         <hr className="footer-hr"/>
@@ -61,7 +35,7 @@ const Footer = () => {
                     </Nav>
                 </Col>
 
-                <Col md={3}>
+                <Col md={4}>
                     <Nav className="footer-navigation">
                         <h3>Information</h3>
                         <hr className="footer-hr"/>
@@ -88,7 +62,7 @@ const Footer = () => {
                     </Nav>
                 </Col>
 
-                <Col md={3}>
+                <Col md={4}>
                     <Nav className="footer-navigation">
                         <LinkContainer to='/'>
                             <Nav.Link className="footer-logo">
